@@ -1,13 +1,14 @@
-<style>
-    
+
     body {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 17px;
-        background-color: rbg(3, 21, 22);
+        background-color: rgb(40, 63, 120);
+        margin: 0;
     }
     
     #page {
         display: flex;
+        text-align: center;
         flex-direction: row;
     }
 
@@ -20,28 +21,142 @@
         height: 80px;
         margin-top: 0px;
         background-color: cornflowerblue;
-        color: white;
+        color: black;
+        border-bottom: 0.1pc solid  rgb(39, 58, 93);
+        
     }
 
-    .name {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
+    #name1 {
+        font-family: 'Monoton', cursive;
+        font-size: 50px;
+        font-weight: 700;
         padding: 0px 20px;
+        opacity: 0.7;
     }
 
-    .motto {
-        font-size: 25px;
-        padding: 0px 20px;
-        margin: 10px 10px 0px 10px;
+    #name2 {
+        font-family: 'Monoton', cursive;
+        font-weight: 700;
+        font-size: 50px;
+        opacity: 0.7;
     }
+
 
     #meat {
-        color: white;
+        color: black;
         background-color: cornflowerblue;
         position: relative;
-        width: 80%;
+        width: 90%;
         margin: 110px auto 30px auto;
+        border-radius: 25px 25px 25px 25px;
         min-width: 660px;
         max-width: 820px;
     }
-    </style>
+
+    #buttons {
+        display: grid;
+        grid-gap: 20px 20px;
+        padding: 30px;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: auto;
+        grid-template-areas: "cw gh fcc";
+        margin: 20px auto;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 13px;
+        border-radius: 10px 10px;
+        padding:20px 50px;
+        height: 200px;
+        min-width: 100px;
+        background-size: 100%;
+    }
+   
+    .cw {
+        transition: transform 0.8s;
+        background-position: center;
+        background-image: url(https://uploads.codesandbox.io/uploads/user/f530c207-904c-4323-9de2-c6c37da82d59/qD7P-codewars.svg);
+    }
+
+    .cw:hover {
+        transform: scale(1.1);
+    }
+
+    .gh {
+        transition: transform 0.8s;
+        background-position: center;
+        background-image: url(https://uploads.codesandbox.io/uploads/user/f530c207-904c-4323-9de2-c6c37da82d59/SNt2-github.svg);
+    }
+
+    .gh:hover {
+        transform: scale(1.1);
+    }
+
+    .fcc {
+        transition: transform 0.8s;
+        background-position: center;
+        background-image: url(https://uploads.codesandbox.io/uploads/user/f530c207-904c-4323-9de2-c6c37da82d59/kdMR-freecodecamp.svg);
+    }
+
+    .fcc:hover {
+        transform: scale(1.1);
+    }
+
+    /* -- beginning of C&P --Style the tab */
+.tab {
+    padding: 15px;
+    overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-family: 'Monoton', cursive;
+    opacity: 0.7;
+    font-size: 2.5rem;
+    background-color: inherit;
+    border: solid;
+    border-radius: 25px 25px 25px 25px;
+    outline: none;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 25px 25px;
+    transition: 0.1s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(39, 58, 93);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(39, 58, 93);
+}
+
+/* --end of C&P --Style the tab content */
+.tabcontent {
+    justify-content: flex-start;
+    display: none;
+    padding: 30px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: cornflowerblue;
+}
+
+}
+    #polaroid {
+     width: 100%;  
+     height: auto;
+    }
+
+
+    #about {
+        margin: 20px auto;  
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    

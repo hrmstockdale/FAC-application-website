@@ -146,13 +146,14 @@
 }
 
 
-    #polaroid {
-     width: 100%;  
+img {
+     width: 40%;  
      height: auto;
+     border-radius: 25px 25px 25px 25px;
     }
 
 
-    #about {
+#about {
         margin: 20px auto;  
         padding: 30px;
         display: flex;

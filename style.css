@@ -112,13 +112,12 @@
         opacity: 1;
     }
 
-    /* -- beginning of C&P --Style the tab */
+    
 .tab {
     padding: 15px;
     overflow: hidden;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
     font-family: 'Monoton', cursive;
     opacity: 0.8;
@@ -143,7 +142,6 @@
     background-color: rgb(39, 58, 93);
 }
 
-/* --end of C&P --Style the tab content */
 .tabcontent {
     justify-content: flex-start;
     display: none;
@@ -178,4 +176,5 @@ h4 {
 h3 {
     text-align: start;
     margin:0;
+    padding: 0px 5px;
 }
